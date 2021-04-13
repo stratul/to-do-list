@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+body{
+  background: linear-gradient(to right, #13b8bede, #8f8f8fde);
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+}
+
+section{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 50%;
+  height: auto;
+  margin: auto;
+}
+
+h1{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+#given-task {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  outline: none;
+  border: none;
+  margin: 40px 0px;
+  font-size: 22px;
+  background:rgba(255,255,255, 0.5);
+}
+  
+#given-task::placeholder{
+  font-size: 22px;
+}
+
+.output {
+  width: 90%;
+  margin: auto;
+}
+
+#pending-task {
+  margin-bottom: 25px;
+}
+  
+h2 {
+  margin: 15px 0px;
+  width: 80%;
+  display: inline-block;
+  font-weight: 900;
+}
+
+.task{      
+  width: 100%;
+  padding: 18px;
+  margin-bottom:4px ;
+  font-size: 16px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+
+ol li{
+  background: rgba(39, 61, 161, 0.5);
+  margin-bottom: 10px;
+  list-style-position: inside;
+}
+
+button{
+  border: none;
+  outline: none;
+  color: white;
+  padding: 8px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 18%;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.btn1{
+  background: rgba(39, 61, 161, 1);
+}
+.btn1:hover{
+  background: rgba(39, 61, 161, 0.6);
+}
+
+.btn2{
+  background: rgba(27, 156, 60, 1);
+}
+.btn2:hover{
+  background: rgba(27, 156, 60, 0.6);
+}
+
+.clear-all {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#completed-task .task{
+  background: rgba(27, 156, 60, 0.5);
+  color: #000;
+}  
+  
+.task i{
+  float: right;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.trash:hover{
+  color: red;
+  transform: scale(1.2);
+}
+
+.check:hover{
+  color: rgb(2, 248, 2);
+  transform: scale(1.2);
+}
+.undo:hover{
+  color: rgb(2, 68, 248);
+  transform: scale(1.2);
+}
